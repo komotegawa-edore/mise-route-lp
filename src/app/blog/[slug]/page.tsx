@@ -36,8 +36,37 @@ export async function generateMetadata({
   };
 }
 
-function generateBlogPostingSchema(post: NonNullable<Awaited<ReturnType<typeof getPostById>>>) {
-  return {
+const SITE_URL = "https://mise-route.jp";
+
+function generateBlogDetailSchemas(post: NonNullable<Awaited<ReturnType<typeof getPostById>>>) {
+  const categoryName = getCategoryName(post.category);
+
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "ホーム",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "ブログ",
+        item: `${SITE_URL}/blog`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `${SITE_URL}/blog/${post.id}`,
+      },
+    ],
+  };
+
+  const blogPosting = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
@@ -47,22 +76,25 @@ function generateBlogPostingSchema(post: NonNullable<Awaited<ReturnType<typeof g
     author: {
       "@type": "Organization",
       name: "ミセルート",
-      url: "https://mise-route.jp",
+      url: SITE_URL,
     },
     publisher: {
       "@type": "Organization",
       name: "ミセルート",
       logo: {
         "@type": "ImageObject",
-        url: "https://mise-route.jp/logo.png",
+        url: `${SITE_URL}/logo.png`,
       },
     },
     ...(post.eyecatch && { image: post.eyecatch.url }),
+    ...(categoryName && { articleSection: categoryName }),
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://mise-route.jp/blog/${post.id}`,
+      "@id": `${SITE_URL}/blog/${post.id}`,
     },
   };
+
+  return [breadcrumb, blogPosting];
 }
 
 export default async function BlogDetail({
@@ -83,7 +115,7 @@ export default async function BlogDetail({
 
   return (
     <article className="blog-container blog-article">
-      <JsonLd data={generateBlogPostingSchema(post)} />
+      <JsonLd data={generateBlogDetailSchemas(post)} />
 
       {getCategoryName(post.category) && (
         <span className="blog-article-cat">{getCategoryName(post.category)}</span>
