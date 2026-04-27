@@ -526,14 +526,15 @@ export default function Home() {
             URLをLINEで送るだけ。お店専用の公式デモを無料で作成します。
           </p>
           <div className="cta-line-official">
+            <span>ミセルートの</span>
             <Image
               src="/LINE-official.png"
               alt="LINE公式アカウント"
               width={600}
               height={80}
-              style={{ height: "24px", width: "auto" }}
+              style={{ height: "22px", width: "auto", filter: "brightness(0) invert(1)" }}
             />
-            <span>ミセルートの公式LINEを友だち追加してください</span>
+            <span>を友だち追加してください</span>
           </div>
           <a href="#" className="btn btn-primary">
             <LineLogo size={18} />
