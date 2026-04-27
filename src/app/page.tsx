@@ -69,8 +69,8 @@ export default function Home() {
                 <LineLogo size={18} />
                 LINEで無料デモを依頼する
               </a>
-              <a href="#features" className="btn btn-ghost">
-                サービスを見る
+              <a href="/contact" className="btn btn-ghost">
+                お問い合わせはこちら
               </a>
             </div>
           </div>
