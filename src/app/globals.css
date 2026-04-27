@@ -462,7 +462,7 @@ section { padding: 72px 0; }
   max-height: 0; overflow: hidden;
   transition: max-height .25s ease;
 }
-.faq-item.open .faq-a { max-height: 200px; }
+.faq-item.open .faq-a { max-height: 300px; }
 .faq-a-inner {
   padding: 0 18px 16px 56px;
   font-size: 13px; color: var(--ink-2);
