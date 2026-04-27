@@ -386,6 +386,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WORKS */}
+      <section className="works" id="works">
+        <div className="wrap">
+          <h2 className="sec-title">
+            <span className="deco">制作実績</span>
+          </h2>
+
+          <div className="works-case">
+            <div className="works-info">
+              <span className="works-category">ジンギスカン専門店</span>
+              <h3>炭火ジンギスカン翔</h3>
+              <p>
+                奈良県橿原市の炭火ジンギスカン専門店。食べログ・Instagramの情報をもとに、店舗の魅力を伝える公式サイトを制作。ギャラリー・メニュー・アクセス・予約導線をワンページに集約しました。
+              </p>
+              <div className="works-features">
+                <span>公式サイト制作</span>
+                <span>メニュー掲載</span>
+                <span>Googleマップ連携</span>
+                <span>予約導線設計</span>
+              </div>
+              <a
+                href="https://jingisukansho.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="works-link"
+              >
+                サイトを見る
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+
+            <div className="works-fv">
+              <Image
+                src="/img/jisseki/fv.png"
+                alt="炭火ジンギスカン翔 - PC・スマホ表示"
+                width={1335}
+                height={777}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3 STEPS */}
       <section className="steps" id="steps">
         <div className="wrap">
