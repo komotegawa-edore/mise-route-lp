@@ -28,6 +28,7 @@ export default function Home() {
           </div>
           <div className="nav-links">
             <a href="#features">サービス</a>
+            <a href="#works">実績</a>
             <a href="#pricing">料金</a>
             <a href="#steps">制作の流れ</a>
             <a href="#faq">よくある質問</a>
