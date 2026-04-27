@@ -1,18 +1,14 @@
 import Image from "next/image";
 import FaqSection from "./components/FaqSection";
 
-function LineLogo({ size = 16, white = false }: { size?: number; white?: boolean }) {
+function LineLogo({ size = 16 }: { size?: number }) {
   return (
     <Image
       src="/LINE-logo.png"
       alt="LINE"
       width={120}
       height={120}
-      style={{
-        height: `${size}px`,
-        width: "auto",
-        ...(white ? { filter: "brightness(0) invert(1)" } : {}),
-      }}
+      style={{ height: `${size}px`, width: "auto" }}
     />
   );
 }
@@ -41,7 +37,7 @@ export default function Home() {
             <a href="#faq">よくある質問</a>
           </div>
           <a href="#cta" className="nav-cta">
-            <LineLogo size={16} white />
+            <LineLogo size={16} />
             LINEで無料デモを依頼する
           </a>
         </div>
@@ -71,7 +67,7 @@ export default function Home() {
             </div>
             <div className="hero-ctas">
               <a href="#cta" className="btn btn-primary">
-                <LineLogo size={18} white />
+                <LineLogo size={18} />
                 LINEで無料デモを依頼する
               </a>
               <a href="#features" className="btn btn-ghost">
@@ -554,11 +550,11 @@ export default function Home() {
           <div className="foot-top">
             <div className="logo">
               <Image
-                src="/logo.png"
+                src="/logo-white.png"
                 alt="ミセルート"
                 width={160}
                 height={53}
-                style={{ height: "28px", width: "auto", filter: "brightness(0) invert(1)" }}
+                style={{ height: "28px", width: "auto" }}
               />
             </div>
             <div className="foot-links">
