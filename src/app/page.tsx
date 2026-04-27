@@ -324,62 +324,75 @@ export default function Home() {
 
           <div className="price-grid">
             <div className="price-card">
+              <span className="price-label">LIGHT</span>
               <h3 className="price-name">ライト</h3>
               <div className="price-rows">
                 <div className="price-row">
-                  初期 <b>39,800</b>
-                  <span className="yen">円〜</span>
+                  初期費用 <b>50,000</b>
+                  <span className="yen">円</span>
                 </div>
                 <div className="price-row">
-                  月額 <b>3,000</b>
-                  <span className="yen">円〜</span>
+                  月額 <b>5,000</b>
+                  <span className="yen">円/月</span>
                 </div>
               </div>
               <ul className="price-list">
-                <li>1ページサイト</li>
-                <li>基本情報掲載</li>
-                <li>予約導線設置</li>
-                <li>軽微な更新</li>
+                <li>1ページ構成</li>
+                <li>基本情報・メニュー掲載</li>
+                <li>予約・問い合わせ導線</li>
+                <li>スマホ対応</li>
+                <li>軽微な修正（月1回）</li>
               </ul>
+              <p className="price-fit">まずは公式サイトを持ちたい方に</p>
             </div>
 
             <div className="price-card featured">
-              <span className="price-badge">スタンダード</span>
+              <span className="price-badge">おすすめ</span>
+              <span className="price-label">STANDARD</span>
               <h3 className="price-name">スタンダード</h3>
               <div className="price-rows">
                 <div className="price-row">
-                  初期 <b>79,800</b>
-                  <span className="yen">円〜</span>
+                  初期費用 <b>80,000</b>
+                  <span className="yen">円</span>
                 </div>
                 <div className="price-row">
                   月額 <b>8,000</b>
-                  <span className="yen">円〜</span>
+                  <span className="yen">円/月</span>
                 </div>
               </div>
               <ul className="price-list">
-                <li>複数ページ</li>
-                <li>お知らせ更新</li>
-                <li>月額固定の更新</li>
+                <li className="price-include">ライトの全機能 +</li>
+                <li>複数ページ構成</li>
+                <li>お知らせ・ブログ更新機能</li>
+                <li>Googleマップ・SNS連携</li>
+                <li>写真・テキスト更新（月2回）</li>
+                <li>アクセス解析レポート</li>
               </ul>
+              <p className="price-fit">集客導線をしっかり整えたい方に</p>
             </div>
 
             <div className="price-card">
-              <h3 className="price-name">運用サポート</h3>
+              <span className="price-label">PREMIUM</span>
+              <h3 className="price-name">プレミアム</h3>
               <div className="price-rows">
                 <div className="price-row">
-                  月額 <b>14,800</b>
-                  <span className="yen">円〜</span>
+                  初期費用 <b>110,000</b>
+                  <span className="yen">円</span>
                 </div>
-                <div className="price-row" style={{ opacity: 0 }}>
-                  &nbsp;
+                <div className="price-row">
+                  月額 <b>11,000</b>
+                  <span className="yen">円/月</span>
                 </div>
               </div>
               <ul className="price-list">
-                <li>更新代行</li>
-                <li>写真差し替え</li>
-                <li>運用相談</li>
-                <li>導線改善サポート</li>
+                <li className="price-include">スタンダードの全機能 +</li>
+                <li>オリジナルデザイン</li>
+                <li>写真撮影ディレクション</li>
+                <li>更新代行（月4回）</li>
+                <li>導線改善・運用相談</li>
+                <li>優先サポート</li>
               </ul>
+              <p className="price-fit">運用までまるっと任せたい方に</p>
             </div>
           </div>
 
