@@ -363,11 +363,9 @@ export default function Home() {
               </div>
               <ul className="price-list">
                 <li className="price-include">ライトの全機能 +</li>
-                <li>複数ページ構成（5P目安）</li>
-                <li>SEO基本対策</li>
-                <li>更新代行（月3回）</li>
+                <li>お知らせ記事の作成・更新</li>
               </ul>
-              <p className="price-fit">更新・集客まで任せたい方に</p>
+              <p className="price-fit">お知らせで最新情報を発信したい方に</p>
             </div>
           </div>
 
