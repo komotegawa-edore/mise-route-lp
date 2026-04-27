@@ -377,6 +377,8 @@ export default function Home() {
           </div>
 
           <p className="price-foot">
+            ※ 初期費用は制作開始前、月額費用はウェブサイト納品後からのお支払いとなります。
+            <br />
             ※ ドメイン・サーバー代等の実費は別途。詳細は無料デモ後にご案内します。
           </p>
         </div>
