@@ -399,6 +399,13 @@ section { padding: 72px 0; }
 .price-list li.price-include::before {
   content: "";
 }
+.price-list li.price-disabled {
+  color: var(--ink-3);
+}
+.price-list li.price-disabled::before {
+  content: "△";
+  color: var(--ink-3);
+}
 .price-fit {
   margin: 14px 0 0;
   padding: 10px 0 0;
