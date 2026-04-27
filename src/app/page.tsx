@@ -340,6 +340,7 @@ export default function Home() {
                 <li>1ページ構成</li>
                 <li>基本情報・メニュー掲載</li>
                 <li>予約・問い合わせ導線</li>
+                <li>Googleマップ・SNS連携</li>
                 <li>スマホ対応</li>
                 <li>更新代行（月1回）</li>
               </ul>
@@ -363,7 +364,6 @@ export default function Home() {
               <ul className="price-list">
                 <li className="price-include">ライトの全機能 +</li>
                 <li>複数ページ構成（5P目安）</li>
-                <li>Googleマップ・SNS連携</li>
                 <li>SEO基本対策</li>
                 <li>更新代行（月3回）</li>
               </ul>
