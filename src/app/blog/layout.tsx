@@ -13,7 +13,7 @@ export default function BlogLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="blog-layout">
       <nav className="blog-nav">
         <div className="wrap blog-nav-inner">
           <a href="/" className="logo">
@@ -46,6 +46,6 @@ export default function BlogLayout({
           <p>&copy; Miseroute</p>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
