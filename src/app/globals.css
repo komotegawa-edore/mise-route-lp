@@ -475,6 +475,12 @@ section { padding: 72px 0; }
 .cta-line-official span {
   font-size: 14px; font-weight: 600; opacity: 0.95;
 }
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .cta-meta {
   display: flex; justify-content: center; gap: 14px;
   margin-top: 24px; flex-wrap: wrap;
@@ -990,6 +996,22 @@ body.menu-open { overflow: hidden; }
   color: var(--ink-2);
   line-height: 1.8;
   margin: 0 0 28px;
+}
+
+.contact-checkbox label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.contact-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--orange);
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {

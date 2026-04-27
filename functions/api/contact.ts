@@ -8,6 +8,7 @@ interface ContactBody {
   phone?: string;
   storeName?: string;
   prefecture?: string;
+  demoRequest?: boolean;
   message?: string;
 }
 
@@ -38,7 +39,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     return jsonResponse({ error: "Invalid JSON" }, 400);
   }
 
-  const { name, email, message, phone, storeName, prefecture } = body;
+  const { name, email, message, phone, storeName, prefecture, demoRequest } = body;
 
   if (!name || !name.trim()) {
     return jsonResponse({ error: "お名前は必須です" }, 400);
@@ -46,19 +47,18 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   if (!email || !email.trim()) {
     return jsonResponse({ error: "メールアドレスは必須です" }, 400);
   }
-  if (!message || !message.trim()) {
-    return jsonResponse({ error: "お問い合わせ内容は必須です" }, 400);
+  if (!phone || !phone.trim()) {
+    return jsonResponse({ error: "電話番号は必須です" }, 400);
   }
 
   const lines = [
     `【お名前】${name}`,
     `【メールアドレス】${email}`,
-    phone ? `【電話番号】${phone}` : null,
+    `【電話番号】${phone}`,
     storeName ? `【店舗名】${storeName}` : null,
     prefecture ? `【都道府県】${prefecture}` : null,
-    "",
-    "【お問い合わせ内容】",
-    message,
+    `【デモサイト作成希望】${demoRequest ? "はい" : "いいえ"}`,
+    message ? `\n【お問い合わせ内容】\n${message}` : null,
   ]
     .filter((l) => l !== null)
     .join("\n");

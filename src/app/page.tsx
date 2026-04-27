@@ -458,13 +458,15 @@ export default function Home() {
             />
             <span>を友だち追加してください</span>
           </div>
-          <a href="https://lin.ee/Ziccn2U" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            <LineLogo size={18} />
-            LINEで無料デモを依頼する
-          </a>
-          <a href="/contact" className="btn btn-ghost" style={{ background: "rgba(255,255,255,0.15)", color: "white", borderColor: "rgba(255,255,255,0.4)" }}>
-            お問い合わせフォームはこちら
-          </a>
+          <div className="cta-buttons">
+            <a href="https://lin.ee/Ziccn2U" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <LineLogo size={18} />
+              LINEで無料デモを依頼する
+            </a>
+            <a href="/contact" className="btn btn-ghost" style={{ background: "rgba(255,255,255,0.15)", color: "white", borderColor: "rgba(255,255,255,0.4)" }}>
+              お問い合わせフォームはこちら
+            </a>
+          </div>
           <div className="cta-meta">
             <span>初回相談無料</span>
             <span>個人飲食店向け</span>

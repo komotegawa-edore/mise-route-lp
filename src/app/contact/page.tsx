@@ -23,6 +23,7 @@ export default function ContactPage() {
     phone: "",
     storeName: "",
     prefecture: "",
+    demoRequest: false,
     message: "",
   });
   const [state, setState] = useState<FormState>("idle");
@@ -31,7 +32,11 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    const { name, value, type } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -130,11 +135,14 @@ export default function ContactPage() {
               </div>
 
               <div className="contact-field">
-                <label htmlFor="phone">電話番号</label>
+                <label htmlFor="phone">
+                  電話番号 <span className="contact-required">必須</span>
+                </label>
                 <input
                   id="phone"
                   name="phone"
                   type="tel"
+                  required
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="090-1234-5678"
@@ -170,14 +178,23 @@ export default function ContactPage() {
                 </select>
               </div>
 
-              <div className="contact-field">
-                <label htmlFor="message">
-                  お問い合わせ内容 <span className="contact-required">必須</span>
+              <div className="contact-field contact-checkbox">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="demoRequest"
+                    checked={form.demoRequest}
+                    onChange={handleChange}
+                  />
+                  <span>無料デモサイトの作成を希望する</span>
                 </label>
+              </div>
+
+              <div className="contact-field">
+                <label htmlFor="message">お問い合わせ内容</label>
                 <textarea
                   id="message"
                   name="message"
-                  required
                   rows={6}
                   value={form.message}
                   onChange={handleChange}
