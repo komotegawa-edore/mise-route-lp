@@ -322,10 +322,10 @@ export default function Home() {
             <span className="deco">料金プラン</span>
           </h2>
 
-          <div className="price-grid price-grid-2">
+          <div className="price-single">
             <div className="price-card">
-              <span className="price-label">LIGHT</span>
-              <h3 className="price-name">ライト</h3>
+              <span className="price-label">BASE PLAN</span>
+              <h3 className="price-name">基本プラン</h3>
               <div className="price-rows">
                 <div className="price-row">
                   初期費用 <b>50,000</b>
@@ -337,35 +337,42 @@ export default function Home() {
                 </div>
               </div>
               <ul className="price-list">
-                <li>1ページ構成</li>
+                <li>公式サイト制作（1ページ構成）</li>
                 <li>基本情報・メニュー掲載</li>
                 <li>予約・問い合わせ導線</li>
                 <li>Googleマップ・SNS連携</li>
                 <li>スマホ対応</li>
                 <li>更新代行（月1回）</li>
               </ul>
-              <p className="price-fit">まずは公式サイトを持ちたい方に</p>
             </div>
+          </div>
 
-            <div className="price-card featured">
-              <span className="price-badge">おすすめ</span>
-              <span className="price-label">STANDARD</span>
-              <h3 className="price-name">スタンダード</h3>
-              <div className="price-rows">
-                <div className="price-row">
-                  初期費用 <b>80,000</b>
-                  <span className="yen">円</span>
+          <div className="option-section">
+            <h3 className="option-title">オプション</h3>
+            <div className="option-grid">
+              <div className="option-card">
+                <div className="option-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                  </svg>
                 </div>
-                <div className="price-row">
-                  月額 <b>8,000</b>
-                  <span className="yen">円/月</span>
-                </div>
+                <h4>ブログ・お知らせ構築</h4>
+                <p>お知らせやブログ記事の投稿機能を追加。季節メニューやイベント情報を発信できます。</p>
+                <span className="option-price">要相談</span>
               </div>
-              <ul className="price-list">
-                <li className="price-include">ライトの全機能 +</li>
-                <li>お知らせ記事の作成・更新</li>
-              </ul>
-              <p className="price-fit">お知らせで最新情報を発信したい方に</p>
+              <div className="option-card">
+                <div className="option-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  </svg>
+                </div>
+                <h4>公式LINE構築</h4>
+                <p>LINE公式アカウントの開設・リッチメニュー作成・サイトとの連携を行います。</p>
+                <span className="option-price">要相談</span>
+              </div>
             </div>
           </div>
 
