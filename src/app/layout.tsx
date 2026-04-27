@@ -16,10 +16,47 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_URL = "https://mise-route.jp";
+const description =
+  "個人飲食店のための、お客さま導線まるっとパッケージ制作。公式サイト・予約導線まで、まとめて整える。";
+
 export const metadata: Metadata = {
-  title: "ミセルート - 飲食店の魅力を、来店までつなぐ",
-  description:
-    "個人飲食店のための、お客さま導線まるっとパッケージ制作。公式サイト・Googleマップ・予約導線まで、まとめて整える。",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "ミセルート - 飲食店の魅力を、来店までつなぐ",
+    template: "%s | ミセルート",
+  },
+  description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    siteName: "ミセルート",
+    locale: "ja_JP",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ミセルート - 飲食店の魅力を、来店までつなぐ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({

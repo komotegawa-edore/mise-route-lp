@@ -1,5 +1,7 @@
 import Image from "next/image";
 import FaqSection from "./components/FaqSection";
+import JsonLd from "./components/JsonLd";
+import { generateAllSchemas } from "@/lib/structured-data";
 
 function LineLogo({ size = 16 }: { size?: number }) {
   return (
@@ -16,6 +18,8 @@ function LineLogo({ size = 16 }: { size?: number }) {
 export default function Home() {
   return (
     <>
+      <JsonLd data={generateAllSchemas()} />
+
       {/* NAV */}
       <nav className="nav">
         <div className="wrap nav-inner">
@@ -56,15 +60,8 @@ export default function Home() {
               個人飲食店のための、
               <b>お客さま導線まるっとパッケージ制作。</b>
               <br />
-              公式サイト・Googleマップ・予約導線まで、まとめて整える。
+              公式サイト・予約導線まで、まとめて整える。
             </p>
-            <div className="hero-callout">
-              食べログ・Instagram・Googleマップにいる
-              <br />
-              <b>
-                お店探し中のお客さまを、お店の公式デモから来店へつなげます。
-              </b>
-            </div>
             <div className="hero-ctas">
               <a href="#cta" className="btn btn-primary">
                 <LineLogo size={18} />
@@ -201,18 +198,9 @@ export default function Home() {
             </div>
             <div className="feat-card">
               <div className="feat-image">
-                <Image src="/img/features/googlemap.png" alt="Googleマップ整備" width={640} height={360} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
-              <h3>B. Googleマップ整備</h3>
-              <p>
-                ビジネスプロフィールの最適化で、検索からの来店をサポート。
-              </p>
-            </div>
-            <div className="feat-card">
-              <div className="feat-image">
                 <Image src="/img/features/reservation.png" alt="予約・問い合わせ導線" width={640} height={360} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <h3>C. 予約・問い合わせ導線</h3>
+              <h3>B. 予約・問い合わせ導線</h3>
               <p>
                 LINE・予約フォームまで、迷わず行動できる動線を設計します。
               </p>
@@ -221,7 +209,7 @@ export default function Home() {
               <div className="feat-image">
                 <Image src="/img/features/update.png" alt="公開後の更新サポート" width={640} height={360} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <h3>D. 公開後の更新サポート</h3>
+              <h3>C. 公開後の更新サポート</h3>
               <p>
                 季節メニューやお知らせを、定期更新で「生きた」情報に保ちます。
               </p>
@@ -247,7 +235,6 @@ export default function Home() {
               <div className="works-features">
                 <span>公式サイト制作</span>
                 <span>メニュー掲載</span>
-                <span>Googleマップ連携</span>
                 <span>予約導線設計</span>
               </div>
               <a
@@ -369,7 +356,6 @@ export default function Home() {
               </div>
               <ul className="price-list">
                 <li>複数ページ</li>
-                <li>Googleマップ連携</li>
                 <li>お知らせ更新</li>
                 <li>月額固定の更新</li>
               </ul>
@@ -497,7 +483,7 @@ export default function Home() {
             </div>
             <div className="foot-links">
               <a href="#features">サービス</a>
-              <a href="#">個人飲食店向け</a>
+              <a href="/blog">ブログ</a>
               <a href="#">お問い合わせ</a>
             </div>
           </div>
