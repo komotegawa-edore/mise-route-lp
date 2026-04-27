@@ -462,6 +462,9 @@ export default function Home() {
             <LineLogo size={18} />
             LINEで無料デモを依頼する
           </a>
+          <a href="/contact" className="btn btn-ghost" style={{ background: "rgba(255,255,255,0.15)", color: "white", borderColor: "rgba(255,255,255,0.4)" }}>
+            お問い合わせフォームはこちら
+          </a>
           <div className="cta-meta">
             <span>初回相談無料</span>
             <span>個人飲食店向け</span>
@@ -486,6 +489,7 @@ export default function Home() {
             <div className="foot-links">
               <a href="#features">サービス</a>
               <a href="/blog">ブログ</a>
+              <a href="/contact">お問い合わせ</a>
               <a href="/privacy">プライバシーポリシー</a>
               <a href="/tokushoho">特定商取引法に基づく表記</a>
             </div>

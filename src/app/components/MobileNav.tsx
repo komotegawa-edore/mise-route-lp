@@ -9,6 +9,7 @@ const links = [
   { href: "#pricing", label: "料金" },
   { href: "#steps", label: "制作の流れ" },
   { href: "#faq", label: "よくある質問" },
+  { href: "/contact", label: "お問い合わせ" },
 ];
 
 export default function MobileNav() {
