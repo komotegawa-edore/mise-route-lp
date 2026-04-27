@@ -1,13 +1,24 @@
 import { createClient } from "microcms-js-sdk";
 import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk";
 
+export type BlogCategory = {
+  id: string;
+  name: string;
+} & MicroCMSListContent;
+
 export type BlogPost = {
   title: string;
   content: string;
   eyecatch?: MicroCMSImage;
   description?: string;
-  category?: string;
+  category?: BlogCategory | string;
 } & MicroCMSListContent;
+
+export function getCategoryName(category?: BlogCategory | string): string | undefined {
+  if (!category) return undefined;
+  if (typeof category === "string") return category;
+  return category.name;
+}
 
 const serviceDomain = process.env.MICROCMS_SERVICE_DOMAIN ?? "";
 const apiKey = process.env.MICROCMS_API_KEY ?? "";

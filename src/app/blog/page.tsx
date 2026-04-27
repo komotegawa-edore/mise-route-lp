@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getAllPosts } from "@/lib/microcms";
+import { getAllPosts, getCategoryName } from "@/lib/microcms";
 
 export default async function BlogIndex() {
   const posts = await getAllPosts();
@@ -36,8 +36,8 @@ export default async function BlogIndex() {
                   <div className="blog-card-noimage">No Image</div>
                 )}
               </div>
-              {post.category && (
-                <span className="blog-card-cat">{post.category}</span>
+              {getCategoryName(post.category) && (
+                <span className="blog-card-cat">{getCategoryName(post.category)}</span>
               )}
               <h2 className="blog-card-title">{post.title}</h2>
               {post.description && (

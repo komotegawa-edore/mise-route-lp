@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FaqSection from "./components/FaqSection";
 import JsonLd from "./components/JsonLd";
+import MobileNav from "./components/MobileNav";
 import { generateAllSchemas } from "@/lib/structured-data";
 
 function LineLogo({ size = 16 }: { size?: number }) {
@@ -44,6 +45,7 @@ export default function Home() {
             <LineLogo size={16} />
             LINEで無料デモを依頼する
           </a>
+          <MobileNav />
         </div>
       </nav>
 
@@ -484,7 +486,8 @@ export default function Home() {
             <div className="foot-links">
               <a href="#features">サービス</a>
               <a href="/blog">ブログ</a>
-              <a href="#">お問い合わせ</a>
+              <a href="/privacy">プライバシーポリシー</a>
+              <a href="/tokushoho">特定商取引法に基づく表記</a>
             </div>
           </div>
           <div className="foot-bot">&copy; Miseroute</div>
