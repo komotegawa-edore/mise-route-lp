@@ -391,31 +391,7 @@ section { padding: 72px 0; }
   border-radius: 10px;
   margin-bottom: 8px;
   position: relative; overflow: hidden;
-}
-.rec-img.cafe {
-  background: radial-gradient(circle at 50% 50%, #d4a06a, #8b5a2e);
-}
-.rec-img.izakaya {
-  background: linear-gradient(135deg, #c9421f 0%, #7a200a 100%);
-}
-.rec-img.ramen {
-  background: radial-gradient(circle at 50% 60%, #e8c08a, #9a6b3a);
-}
-.rec-img.italian {
-  background: linear-gradient(135deg, #7aa066 0%, #4a6a3a 100%);
-}
-.rec-img.private {
-  background: linear-gradient(180deg, #4a3a2e 0%, #1f1812 100%);
-}
-.rec-img.new {
-  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-deep) 100%);
-  display: grid; place-items: center;
-  color: white; font-weight: 800;
-}
-.rec-img.new .open {
-  font-family: var(--font-inter), sans-serif;
-  font-size: 22px; letter-spacing: 0.1em;
-  transform: rotate(-8deg);
+  background: var(--orange-soft-2);
 }
 .rec-card p {
   margin: 0; font-size: 13px; font-weight: 600;

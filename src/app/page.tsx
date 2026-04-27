@@ -482,28 +482,38 @@ export default function Home() {
 
           <div className="rec-grid" style={{ marginTop: 28 }}>
             <div className="rec-card">
-              <div className="rec-img cafe"></div>
+              <div className="rec-img">
+                <Image src="/img/recommended/cafe.png" alt="カフェ" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </div>
               <p>カフェ</p>
             </div>
             <div className="rec-card">
-              <div className="rec-img izakaya"></div>
+              <div className="rec-img">
+                <Image src="/img/recommended/izakaya.png" alt="居酒屋" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </div>
               <p>居酒屋</p>
             </div>
             <div className="rec-card">
-              <div className="rec-img ramen"></div>
+              <div className="rec-img">
+                <Image src="/img/recommended/ramen.png" alt="麺料理" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </div>
               <p>麺料理</p>
             </div>
             <div className="rec-card">
-              <div className="rec-img italian"></div>
+              <div className="rec-img">
+                <Image src="/img/recommended/italian.png" alt="イタリアン" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </div>
               <p>イタリアン</p>
             </div>
             <div className="rec-card">
-              <div className="rec-img private"></div>
+              <div className="rec-img">
+                <Image src="/img/recommended/private.png" alt="個人レストラン" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </div>
               <p>個人レストラン</p>
             </div>
             <div className="rec-card">
-              <div className="rec-img new">
-                <span className="open">OPEN</span>
+              <div className="rec-img">
+                <Image src="/img/recommended/new.png" alt="新規開業店舗" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <p>新規開業店舗</p>
             </div>
