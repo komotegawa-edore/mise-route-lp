@@ -322,7 +322,7 @@ export default function Home() {
             <span className="deco">料金プラン</span>
           </h2>
 
-          <div className="price-grid">
+          <div className="price-grid price-grid-2">
             <div className="price-card">
               <span className="price-label">LIGHT</span>
               <h3 className="price-name">ライト</h3>
@@ -368,30 +368,6 @@ export default function Home() {
                 <li>更新代行（月3回）</li>
               </ul>
               <p className="price-fit">更新・集客まで任せたい方に</p>
-            </div>
-
-            <div className="price-card">
-              <span className="price-label">PREMIUM</span>
-              <h3 className="price-name">プレミアム</h3>
-              <div className="price-rows">
-                <div className="price-row">
-                  初期費用 <b>110,000</b>
-                  <span className="yen">円</span>
-                </div>
-                <div className="price-row">
-                  月額 <b>11,000</b>
-                  <span className="yen">円/月</span>
-                </div>
-              </div>
-              <ul className="price-list">
-                <li className="price-include">スタンダードの全機能 +</li>
-                <li>更新代行（月5回）</li>
-                <li>ブログ記事作成</li>
-                <li>アクセス解析レポート（月1回）</li>
-                <li>導線改善コンサル</li>
-                <li>優先サポート</li>
-              </ul>
-              <p className="price-fit">ブログ集客・改善まで任せたい方に</p>
             </div>
           </div>
 

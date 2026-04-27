@@ -322,6 +322,12 @@ section { padding: 72px 0; }
   margin-top: 32px;
   align-items: start;
 }
+.price-grid.price-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .price-card {
   background: white;
   border: 1px solid var(--line);
