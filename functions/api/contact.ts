@@ -71,7 +71,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "ミセルート <noreply@miseroute.com>",
+        from: "ミセルート <noreply@edore-edu.com>",
         to: ["k.omotegawa@edore-edu.com"],
         subject: `【ミセルート】お問い合わせ: ${name}様`,
         text: lines,
