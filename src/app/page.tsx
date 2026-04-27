@@ -192,18 +192,7 @@ export default function Home() {
           <div className="feat-grid" style={{ marginTop: 32 }}>
             <div className="feat-card">
               <div className="feat-image">
-                <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                >
-                  <rect x="2" y="4" width="20" height="14" rx="2" />
-                  <path d="M8 22h8M12 18v4" />
-                  <path d="M6 9h6M6 12h8" />
-                </svg>
+                <Image src="/img/features/homepage.png" alt="公式ホームページ制作" width={640} height={360} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3>A. 公式ホームページ制作</h3>
               <p>
@@ -212,17 +201,7 @@ export default function Home() {
             </div>
             <div className="feat-card">
               <div className="feat-image">
-                <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                >
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
+                <Image src="/img/features/googlemap.png" alt="Googleマップ整備" width={640} height={360} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3>B. Googleマップ整備</h3>
               <p>
@@ -231,17 +210,7 @@ export default function Home() {
             </div>
             <div className="feat-card">
               <div className="feat-image">
-                <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                >
-                  <rect x="3" y="4" width="18" height="18" rx="2" />
-                  <path d="M16 2v4M8 2v4M3 10h18" />
-                </svg>
+                <Image src="/img/features/reservation.png" alt="予約・問い合わせ導線" width={640} height={360} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3>C. 予約・問い合わせ導線</h3>
               <p>
@@ -250,17 +219,7 @@ export default function Home() {
             </div>
             <div className="feat-card">
               <div className="feat-image">
-                <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                >
-                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
-                </svg>
+                <Image src="/img/features/update.png" alt="公開後の更新サポート" width={640} height={360} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3>D. 公開後の更新サポート</h3>
               <p>
@@ -330,18 +289,7 @@ export default function Home() {
             <div className="step-card">
               <div className="step-num">1</div>
               <div className="step-image">
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.4"
-                >
-                  <rect x="5" y="2" width="14" height="20" rx="3" />
-                  <path d="M9 18h6" />
-                  <circle cx="12" cy="11" r="3" />
-                </svg>
+                <Image src="/img/steps/step1-line.png" alt="LINEを追加" width={400} height={300} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3>LINEを追加</h3>
               <p>
@@ -353,17 +301,7 @@ export default function Home() {
             <div className="step-card">
               <div className="step-num">2</div>
               <div className="step-image">
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.4"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" />
-                  <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7L12.3 19" />
-                </svg>
+                <Image src="/img/steps/step2-url.png" alt="URLを送る" width={400} height={300} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3>URLを送る</h3>
               <p>
@@ -375,17 +313,7 @@ export default function Home() {
             <div className="step-card">
               <div className="step-num">3</div>
               <div className="step-image">
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.4"
-                >
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
+                <Image src="/img/steps/step3-demo.png" alt="無料デモを確認" width={400} height={300} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3>無料デモを確認</h3>
               <p>
