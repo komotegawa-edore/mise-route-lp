@@ -52,7 +52,7 @@ export default function MobileNav() {
             </a>
           ))}
         </nav>
-        <a href="#cta" className="mobile-menu-cta" onClick={close}>
+        <a href="https://lin.ee/Ziccn2U" target="_blank" rel="noopener noreferrer" className="mobile-menu-cta" onClick={close}>
           <Image
             src="/LINE-logo.png"
             alt="LINE"

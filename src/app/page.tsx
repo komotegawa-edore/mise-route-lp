@@ -41,7 +41,7 @@ export default function Home() {
             <a href="#steps">制作の流れ</a>
             <a href="#faq">よくある質問</a>
           </div>
-          <a href="#cta" className="nav-cta">
+          <a href="https://lin.ee/Ziccn2U" target="_blank" rel="noopener noreferrer" className="nav-cta">
             <LineLogo size={16} />
             LINEで無料デモを依頼する
           </a>
@@ -65,7 +65,7 @@ export default function Home() {
               公式サイト・予約導線まで、まとめて整える。
             </p>
             <div className="hero-ctas">
-              <a href="#cta" className="btn btn-primary">
+              <a href="https://lin.ee/Ziccn2U" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 <LineLogo size={18} />
                 LINEで無料デモを依頼する
               </a>
@@ -458,7 +458,7 @@ export default function Home() {
             />
             <span>を友だち追加してください</span>
           </div>
-          <a href="#" className="btn btn-primary">
+          <a href="https://lin.ee/Ziccn2U" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             <LineLogo size={18} />
             LINEで無料デモを依頼する
           </a>
