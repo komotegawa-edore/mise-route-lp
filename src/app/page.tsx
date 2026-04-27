@@ -1,18 +1,19 @@
 import Image from "next/image";
 import FaqSection from "./components/FaqSection";
 
-function LineIcon({ size = 16 }: { size?: number }) {
+function LineLogo({ size = 16, white = false }: { size?: number; white?: boolean }) {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.2"
-    >
-      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-    </svg>
+    <Image
+      src="/LINE-logo.png"
+      alt="LINE"
+      width={120}
+      height={120}
+      style={{
+        height: `${size}px`,
+        width: "auto",
+        ...(white ? { filter: "brightness(0) invert(1)" } : {}),
+      }}
+    />
   );
 }
 
@@ -23,8 +24,14 @@ export default function Home() {
       <nav className="nav">
         <div className="wrap nav-inner">
           <div className="logo">
-            <span className="logo-mark">ミ</span>
-            <span>ミセルート</span>
+            <Image
+              src="/logo.png"
+              alt="ミセルート"
+              width={160}
+              height={53}
+              style={{ height: "28px", width: "auto" }}
+              priority
+            />
           </div>
           <div className="nav-links">
             <a href="#features">サービス</a>
@@ -34,7 +41,7 @@ export default function Home() {
             <a href="#faq">よくある質問</a>
           </div>
           <a href="#cta" className="nav-cta">
-            <LineIcon size={14} />
+            <LineLogo size={16} white />
             LINEで無料デモを依頼する
           </a>
         </div>
@@ -64,7 +71,7 @@ export default function Home() {
             </div>
             <div className="hero-ctas">
               <a href="#cta" className="btn btn-primary">
-                <LineIcon />
+                <LineLogo size={18} white />
                 LINEで無料デモを依頼する
               </a>
               <a href="#features" className="btn btn-ghost">
@@ -74,133 +81,14 @@ export default function Home() {
           </div>
 
           <div className="hero-visual">
-            <div className="hero-bg">
-              <Image
-                src="/hero-bg.png"
-                alt="ミセルート イメージ"
-                fill
-                style={{ objectFit: "cover" }}
-                priority
-              />
-            </div>
-
-            {/* Phone 1 */}
-            <div className="phone phone-1">
-              <div className="phone-screen">
-                <div className="phone-bar">
-                  <span style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                    9:41
-                  </span>
-                </div>
-                <div className="phone-hero-area">
-                  <span className="phone-hero-tag">旬の食材を活かした</span>
-                </div>
-                <div className="phone-content">
-                  <div className="phone-h">本日のおすすめ</div>
-                  <div className="phone-card">
-                    <div className="phone-thumb"></div>
-                    <div style={{ flex: 1 }}>
-                      <div className="phone-line short"></div>
-                      <div
-                        className="phone-line"
-                        style={{ width: "80%", marginTop: 3 }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="phone-card">
-                    <div className="phone-thumb green"></div>
-                    <div style={{ flex: 1 }}>
-                      <div className="phone-line short"></div>
-                      <div
-                        className="phone-line"
-                        style={{ width: "75%", marginTop: 3 }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="phone-h" style={{ marginTop: 4 }}>
-                    アクセス
-                  </div>
-                  <div className="phone-line"></div>
-                  <div className="phone-line short"></div>
-                </div>
-              </div>
-            </div>
-
-            {/* Phone 2 */}
-            <div className="phone phone-2">
-              <div className="phone-screen">
-                <div
-                  className="phone-bar"
-                  style={{
-                    background:
-                      "linear-gradient(180deg, #4a3a2e, #2a1f16)",
-                  }}
-                >
-                  <span style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                    予約
-                  </span>
-                </div>
-                <div
-                  className="phone-hero-area"
-                  style={{
-                    background:
-                      "radial-gradient(circle at 40% 50%, #e8a868, transparent 60%), repeating-linear-gradient(90deg, #b56a30 0 3px, #a05a25 3px 6px)",
-                  }}
-                >
-                  <span className="phone-hero-tag" style={{ color: "#444" }}>
-                    本日の特選
-                  </span>
-                </div>
-                <div className="phone-content">
-                  <div className="phone-h">ご予約プラン</div>
-                  <div className="phone-card">
-                    <div className="phone-thumb orange"></div>
-                    <div style={{ flex: 1 }}>
-                      <div className="phone-line short"></div>
-                      <div
-                        className="phone-line"
-                        style={{ width: "90%", marginTop: 3 }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="phone-card">
-                    <div className="phone-thumb"></div>
-                    <div style={{ flex: 1 }}>
-                      <div className="phone-line short"></div>
-                      <div
-                        className="phone-line"
-                        style={{ width: "70%", marginTop: 3 }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    style={{
-                      background: "var(--orange)",
-                      color: "white",
-                      textAlign: "center",
-                      padding: 5,
-                      borderRadius: 5,
-                      fontSize: 9,
-                      fontWeight: 700,
-                      marginTop: 4,
-                    }}
-                  >
-                    予約する
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Floating tags */}
-            <div className="float-tag tag-1">
-              <span className="dot">公</span>公式サイト
-            </div>
-            <div className="float-tag tag-2">
-              <span className="dot">G</span>Googleマップ
-            </div>
-            <div className="float-tag tag-3">
-              <span className="dot">予</span>予約導線
-            </div>
+            <Image
+              src="/FV.png"
+              alt="ミセルート 制作実績イメージ"
+              width={1335}
+              height={777}
+              style={{ width: "100%", height: "auto" }}
+              priority
+            />
           </div>
         </div>
       </section>
@@ -637,8 +525,18 @@ export default function Home() {
           <p>
             URLをLINEで送るだけ。お店専用の公式デモを無料で作成します。
           </p>
+          <div className="cta-line-official">
+            <Image
+              src="/LINE-official.png"
+              alt="LINE公式アカウント"
+              width={600}
+              height={80}
+              style={{ height: "24px", width: "auto" }}
+            />
+            <span>ミセルートの公式LINEを友だち追加してください</span>
+          </div>
           <a href="#" className="btn btn-primary">
-            <LineIcon size={18} />
+            <LineLogo size={18} />
             LINEで無料デモを依頼する
           </a>
           <div className="cta-meta">
@@ -653,9 +551,14 @@ export default function Home() {
       <footer>
         <div className="wrap">
           <div className="foot-top">
-            <div className="logo" style={{ color: "#FFF8EE" }}>
-              <span className="logo-mark">ミ</span>
-              <span>ミセルート</span>
+            <div className="logo">
+              <Image
+                src="/logo.png"
+                alt="ミセルート"
+                width={160}
+                height={53}
+                style={{ height: "28px", width: "auto", filter: "brightness(0) invert(1)" }}
+              />
             </div>
             <div className="foot-links">
               <a href="#features">サービス</a>
