@@ -341,7 +341,7 @@ export default function Home() {
                 <li>基本情報・メニュー掲載</li>
                 <li>予約・問い合わせ導線</li>
                 <li>スマホ対応</li>
-                <li className="price-disabled">内容更新は別途お見積もり</li>
+                <li>更新代行（月1回）</li>
               </ul>
               <p className="price-fit">まずは公式サイトを持ちたい方に</p>
             </div>
@@ -363,10 +363,9 @@ export default function Home() {
               <ul className="price-list">
                 <li className="price-include">ライトの全機能 +</li>
                 <li>複数ページ構成（5P目安）</li>
-                <li>お知らせ更新機能</li>
                 <li>Googleマップ・SNS連携</li>
-                <li>写真・テキスト更新（月2回）</li>
                 <li>SEO基本対策</li>
+                <li>更新代行（月3回）</li>
               </ul>
               <p className="price-fit">更新・集客まで任せたい方に</p>
             </div>
@@ -386,8 +385,8 @@ export default function Home() {
               </div>
               <ul className="price-list">
                 <li className="price-include">スタンダードの全機能 +</li>
-                <li>ブログ・コンテンツ更新</li>
-                <li>更新代行（月4回）</li>
+                <li>更新代行（月5回）</li>
+                <li>ブログ記事作成</li>
                 <li>アクセス解析レポート（月1回）</li>
                 <li>導線改善コンサル</li>
                 <li>優先サポート</li>
