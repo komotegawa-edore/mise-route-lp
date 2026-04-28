@@ -149,6 +149,25 @@ export default async function BlogDetail({
         </div>
       )}
 
+      <div className="blog-cta blog-cta-top">
+        <p className="blog-cta-heading">
+          公式サイトのこと、<br className="sp-only" />まずは気軽にご相談ください
+        </p>
+        <div className="blog-cta-buttons">
+          <a
+            href="https://lin.ee/Ziccn2U"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            LINEで無料デモを依頼する
+          </a>
+          <a href="/contact" className="btn btn-ghost">
+            お問い合わせはこちら
+          </a>
+        </div>
+      </div>
+
       <div
         className="blog-article-body"
         dangerouslySetInnerHTML={{ __html: post.content }}

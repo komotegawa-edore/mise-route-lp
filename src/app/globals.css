@@ -944,6 +944,7 @@ body.menu-open { overflow: hidden; }
   display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
 }
 .blog-cta-buttons .btn { font-size: 14px; padding: 10px 24px; }
+.blog-cta-top { margin-top: 0; margin-bottom: 32px; }
 
 .sp-only { display: none; }
 
