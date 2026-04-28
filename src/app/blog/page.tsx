@@ -59,6 +59,11 @@ export default async function BlogIndex() {
   return (
     <div className="blog-container">
       <JsonLd data={generateBlogListSchemas(posts)} />
+      <nav className="breadcrumb" aria-label="パンくずリスト">
+        <a href="/">ホーム</a>
+        <span className="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">ブログ</span>
+      </nav>
       <h1 className="blog-page-title">ブログ</h1>
       <p className="blog-page-desc">
         飲食店の集客・Web活用に役立つ情報をお届けします。

@@ -120,6 +120,14 @@ export default async function BlogDetail({
     <article className="blog-container blog-article">
       <JsonLd data={generateBlogDetailSchemas(post)} />
 
+      <nav className="breadcrumb" aria-label="パンくずリスト">
+        <a href="/">ホーム</a>
+        <span className="breadcrumb-sep" aria-hidden="true">/</span>
+        <a href="/blog">ブログ</a>
+        <span className="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">{post.title}</span>
+      </nav>
+
       {getCategoryName(post.category) && (
         <span className="blog-article-cat">{getCategoryName(post.category)}</span>
       )}
@@ -145,6 +153,28 @@ export default async function BlogDetail({
         className="blog-article-body"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
+
+      <div className="blog-cta">
+        <p className="blog-cta-heading">
+          公式サイトのこと、<br className="sp-only" />まずは気軽にご相談ください
+        </p>
+        <p className="blog-cta-text">
+          URLをLINEで送るだけで、お店専用のデモサイトを無料で作成します。
+        </p>
+        <div className="blog-cta-buttons">
+          <a
+            href="https://lin.ee/Ziccn2U"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            LINEで無料デモを依頼する
+          </a>
+          <a href="/contact" className="btn btn-ghost">
+            お問い合わせはこちら
+          </a>
+        </div>
+      </div>
 
       <div className="blog-article-back">
         <a href="/blog">← 記事一覧に戻る</a>
