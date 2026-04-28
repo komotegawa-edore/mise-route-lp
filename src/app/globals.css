@@ -717,8 +717,7 @@ body.menu-open { overflow: hidden; }
   .steps-grid, .price-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
   .rec-grid { grid-template-columns: repeat(3, 1fr); }
   .nav-links { display: none; }
-  .nav-cta { display: none; }
-  .hamburger { display: flex; }
+  .nav-cta { font-size: 12px; padding: 8px 14px; }
   .price-card.featured { transform: none; }
 }
 
