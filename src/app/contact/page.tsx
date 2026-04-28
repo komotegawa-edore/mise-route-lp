@@ -113,6 +113,8 @@ export default function ContactPage() {
                   name="name"
                   type="text"
                   required
+                  autoComplete="name"
+                  aria-required="true"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="山田 太郎"
@@ -128,6 +130,8 @@ export default function ContactPage() {
                   name="email"
                   type="email"
                   required
+                  autoComplete="email"
+                  aria-required="true"
                   value={form.email}
                   onChange={handleChange}
                   placeholder="example@email.com"
@@ -143,6 +147,10 @@ export default function ContactPage() {
                   name="phone"
                   type="tel"
                   required
+                  autoComplete="tel"
+                  aria-required="true"
+                  pattern="[0-9\-]{10,14}"
+                  title="電話番号はハイフンありまたはなしで入力してください"
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="090-1234-5678"
@@ -155,6 +163,7 @@ export default function ContactPage() {
                   id="storeName"
                   name="storeName"
                   type="text"
+                  autoComplete="organization"
                   value={form.storeName}
                   onChange={handleChange}
                   placeholder="○○カフェ"
@@ -166,6 +175,7 @@ export default function ContactPage() {
                 <select
                   id="prefecture"
                   name="prefecture"
+                  autoComplete="address-level1"
                   value={form.prefecture}
                   onChange={handleChange}
                 >

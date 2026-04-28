@@ -22,6 +22,9 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description ?? `${post.title} | ミセルート ブログ`,
+    alternates: {
+      canonical: `https://mise-route.jp/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description ?? `${post.title} | ミセルート ブログ`,
