@@ -58,7 +58,7 @@ export function generateProfessionalServiceSchema() {
           "@type": "Offer",
           name: "基本プラン 初期費用",
           description:
-            "公式サイト制作（1ページ構成）・基本情報/メニュー掲載・予約/問い合わせ導線・Googleマップ/SNS連携・スマホ対応",
+            "公式サイト制作・基本情報/メニュー掲載・予約/問い合わせ導線・Googleマップ/SNS連携・スマホ対応",
           price: "50000",
           priceCurrency: "JPY",
         },
@@ -66,7 +66,7 @@ export function generateProfessionalServiceSchema() {
           "@type": "Offer",
           name: "基本プラン 月額費用",
           description:
-            "サイト保守・管理、更新代行（月1回）",
+            "サイト保守・管理、更新代行（月2回）、運用アドバイス（随時）",
           price: "5000",
           priceCurrency: "JPY",
         },

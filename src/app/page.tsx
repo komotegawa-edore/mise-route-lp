@@ -334,12 +334,13 @@ export default function Home() {
                 </div>
               </div>
               <ul className="price-list">
-                <li>公式サイト制作（1ページ構成）</li>
+                <li>公式サイト制作</li>
                 <li>基本情報・メニュー掲載</li>
                 <li>予約・問い合わせ導線</li>
                 <li>Googleマップ・SNS連携</li>
                 <li>スマホ対応</li>
-                <li>更新代行（月1回）</li>
+                <li>更新代行（月2回）</li>
+                <li>運用アドバイス（随時）</li>
               </ul>
             </div>
           </div>
