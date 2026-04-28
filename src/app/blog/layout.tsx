@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import BlogCtaPopup from "@/app/components/BlogCtaPopup";
 
 export const metadata: Metadata = {
   title: "ブログ",
@@ -46,6 +47,7 @@ export default function BlogLayout({
           <p>&copy; Miseroute</p>
         </div>
       </footer>
+      <BlogCtaPopup />
     </div>
   );
 }
