@@ -40,7 +40,7 @@ export function generateProfessionalServiceSchema() {
     url: SITE_URL,
     description:
       "個人飲食店向けの公式サイト制作・予約導線設計・更新サポートをワンパッケージで提供。",
-    serviceType: [
+    knowsAbout: [
       "公式ホームページ制作",
       "予約・問い合わせ導線設計",
       "公開後の更新サポート",
@@ -49,30 +49,25 @@ export function generateProfessionalServiceSchema() {
       "@type": "Country",
       name: "JP",
     },
-    priceRange: "¥39,800〜",
+    priceRange: "¥50,000〜",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "料金プラン",
       itemListElement: [
         {
           "@type": "Offer",
-          name: "ライトプラン",
-          description: "1ページサイト・基本情報掲載・予約導線設置・軽微な更新",
-          price: "39800",
+          name: "基本プラン 初期費用",
+          description:
+            "公式サイト制作（1ページ構成）・基本情報/メニュー掲載・予約/問い合わせ導線・Googleマップ/SNS連携・スマホ対応",
+          price: "50000",
           priceCurrency: "JPY",
         },
         {
           "@type": "Offer",
-          name: "スタンダードプラン",
-          description: "複数ページ・お知らせ更新・月額固定の更新",
-          price: "79800",
-          priceCurrency: "JPY",
-        },
-        {
-          "@type": "Offer",
-          name: "運用サポートプラン",
-          description: "更新代行・写真差し替え・運用相談・導線改善サポート",
-          price: "14800",
+          name: "基本プラン 月額費用",
+          description:
+            "サイト保守・管理、更新代行（月1回）",
+          price: "5000",
           priceCurrency: "JPY",
         },
       ],
