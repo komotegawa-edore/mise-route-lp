@@ -23,37 +23,36 @@ export default function BlogCtaPopup() {
   return (
     <>
       <div className="popup-overlay" onClick={close} />
-      <div className="popup-cta popup-cta-image">
-        {/* 閉じるボタン */}
+      <div className="popup-cta">
         <button className="popup-close" onClick={close} aria-label="閉じる">
           &times;
         </button>
-
-        {/* モーダル画像 */}
         <Image
-          src="/mo-daru.png"
-          alt="ミセルート - お店の魅力を、来店までつなぐ。LINEで無料デモを依頼する"
-          width={800}
-          height={800}
-          className="popup-image"
-          priority
+          src="/FV.png"
+          alt="ミセルートのデモサイト例"
+          width={600}
+          height={340}
+          className="popup-fv-image"
         />
-
-        {/* LINEボタンのクリック領域 */}
-        <a
-          href="https://lin.ee/Ziccn2U"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="popup-hotspot popup-hotspot-line"
-          aria-label="LINEで無料デモを依頼する"
-        />
-
-        {/* あとで見るのクリック領域 */}
-        <button
-          className="popup-hotspot popup-hotspot-later"
-          onClick={close}
-          aria-label="あとで見る"
-        />
+        <p className="popup-heading">
+          お店の公式サイト、<br />まずは無料デモで試しませんか?
+        </p>
+        <p className="popup-text">
+          URLをLINEで送るだけ。お店専用のデモサイトを無料で作成します。
+        </p>
+        <div className="popup-buttons">
+          <a
+            href="https://lin.ee/Ziccn2U"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            LINEで無料デモを依頼する
+          </a>
+          <a href="/contact" className="btn btn-ghost">
+            お問い合わせはこちら
+          </a>
+        </div>
       </div>
     </>
   );
